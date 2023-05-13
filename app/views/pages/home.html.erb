@@ -1,2 +1,7 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Movies</h1>
+<p><%= simple_form_for @user do |f| %>
+  <%= f.input :name %>
+  <%= f.association :Movies %>
+  <%= f.association :Lists %>
+  <%= f.button :submit %>
+<% end %></p>

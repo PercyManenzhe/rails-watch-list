@@ -1,2 +1,8 @@
 <h1>Lists#show</h1>
-<p>Find me in app/views/lists/show.html.erb</p>
+
+<p><%= simple_form_for @user do |f| %>
+  <%= f.input :name %>
+  <%= f.association :movies %>
+  <%= f.association :lists %>
+  <%= f.button :submit %>
+<% end %></p>
